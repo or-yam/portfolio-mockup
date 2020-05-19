@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Kingthings_Petrock_light
+font link: http://www.kingthingsfonts.co.uk/fonts/fonts.htm
+font author: Kingthings
+font author site: http://www.kingthingsfonts.co.uk/
+
+
+icon designer: Carol Costa
+icon designer link: /carolcosta
+        
+{"bg":"#E5D3DA","icon-gradient-0":"#30092A","icon-gradient-1":"#CB3C61","font":"#240A14","slogan":"#381e28"}
+      

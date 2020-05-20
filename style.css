@@ -27,6 +27,8 @@ h3 {
   line-height: 1.2;
   margin-bottom: 15px;
 }
+
+/* Background COVER */
 .main-container {
   position: relative;
   height: 100vh;
@@ -37,7 +39,6 @@ h3 {
   text-align: center;
   padding: 0 20px;
 }
-
 .image-cover {
   position: absolute;
   top: 0;
@@ -47,11 +48,14 @@ h3 {
   overflow: hidden;
   background: url(/assets/bird-4706556_1920.jpg) no-repeat center center/cover;
 }
-
 .content {
   z-index: 10;
 }
 
+/* TOP NAV-BAR */
+.open-menu {
+  display: none;
+}
 .main-nav {
   list-style: none;
   display: flex;
@@ -70,6 +74,7 @@ h3 {
 }
 
 .logo {
+  margin: 20px;
   margin-right: auto;
 }
 
@@ -78,6 +83,7 @@ h3 {
   width: auto;
 }
 
+/* BOTTOM NAV-BARS */
 .fixed-bottom {
   position: fixed;
   bottom: 0;
@@ -88,7 +94,6 @@ h3 {
   font-size: 1em;
   margin: 0;
 }
-
 .lang {
   margin-right: auto;
   list-style: none;
@@ -103,13 +108,19 @@ h3 {
   list-style: none;
   margin: 20px;
 }
-
 .social > li {
   margin: 10px;
 }
 
+/* MOBILE VIEW */
 @media only screen and (max-width: 600px) {
-  .main-nav {
+  .open-menu {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+  }
+  li {
     display: none;
   }
   .fixed-bottom {

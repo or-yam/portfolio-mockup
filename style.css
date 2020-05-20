@@ -6,7 +6,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
   line-height: 1.5;
+}
+a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 h1 {
@@ -46,4 +51,36 @@ h3 {
 
 .content {
   z-index: 10;
+}
+
+.main-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+  margin: 0;
+}
+li {
+  padding: 20px;
+}
+.fixed-up {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    font-size: 0.5em;
+    padding: 0;
+  }
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo-image {
+  height: 75px;
+  width: auto;
 }

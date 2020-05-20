@@ -60,7 +60,7 @@ h3 {
   font-size: 1em;
   margin: 0;
 }
-li {
+.main-nav > li {
   padding: 20px;
 }
 .fixed-up {
@@ -83,4 +83,34 @@ li {
 .logo-image {
   height: 75px;
   width: auto;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  font-size: 1em;
+  margin: 0;
+}
+
+.lang {
+  margin-right: auto;
+  list-style: none;
+  writing-mode: vertical-rl;
+  display: flex;
+}
+.lang > li {
+  margin: 10px;
+}
+
+.social {
+  list-style: none;
+  margin: 20px;
+}
+
+.social > li {
+  margin: 10px;
 }

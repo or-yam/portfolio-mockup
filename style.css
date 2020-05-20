@@ -45,8 +45,7 @@ h3 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: url(/assets/iceberg-5163649_1920.jpg) no-repeat center
-    center/cover;
+  background: url(/assets/bird-4706556_1920.jpg) no-repeat center center/cover;
 }
 
 .content {
@@ -69,19 +68,13 @@ h3 {
   width: 100%;
   z-index: 10;
 }
-@media only screen and (max-width: 600px) {
-  .main-nav {
-    font-size: 0.5em;
-    padding: 0;
-  }
-}
 
 .logo {
   margin-right: auto;
 }
 
 .logo-image {
-  height: 75px;
+  height: 80px;
   width: auto;
 }
 
@@ -113,4 +106,13 @@ h3 {
 
 .social > li {
   margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-nav {
+    display: none;
+  }
+  .fixed-bottom {
+    display: none;
+  }
 }

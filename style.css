@@ -1,7 +1,39 @@
 html { 
-    background: url(/assets/iceberg-5163649_1920.jpg) no-repeat center center fixed; 
+    background: url(./assets/iceberg-5163649_1920.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
+
+body {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  font-weight: 500;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+li {
+  list-style: none;
+  padding: 15px;
+}
+
+li > a {
+  text-decoration: none;
+}
+
+.icon {
+  padding: 20px;
+  width: 5rem;
+  margin-right: auto; 
+}
+
+.icon > img {
+  width: 100%;
+}
+

@@ -23,7 +23,7 @@ h1 {
 
 h3 {
   font-weight: 500;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 1.2;
   margin-bottom: 15px;
 }
@@ -126,4 +126,16 @@ h3 {
   .fixed-bottom {
     display: none;
   }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #666;
+  }
+}
+.txt-rotate {
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }

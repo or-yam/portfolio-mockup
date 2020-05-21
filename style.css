@@ -6,7 +6,12 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  color: whitesmoke;
   line-height: 1.5;
+}
+a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 h1 {
@@ -47,6 +52,7 @@ h3 {
 .content {
   z-index: 10;
 }
+
 
 .navbar {
   width: 100%;

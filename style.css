@@ -45,7 +45,7 @@ h3 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: url(/assets/iceberg-5163649_1920.jpg) no-repeat center
+  background: url(./assets/iceberg-5163649_1920.jpg) no-repeat center
     center/cover;
 }
 
@@ -83,4 +83,22 @@ li > a {
 
 .icon > img {
   width: 100%;
+}
+
+.bottom-link {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-link li {
+  padding: 0.5em;
+  writing-mode: vertical-rl;
+}
+
+.push {
+  margin-top: auto;
 }

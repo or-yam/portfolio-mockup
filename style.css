@@ -14,6 +14,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: unset;
+  background-color: transparent;
+}
+
 h1 {
   font-weight: 800;
   font-size: 60px;
@@ -53,7 +58,8 @@ h3 {
 }
 
 /* TOP NAV-BAR */
-.open-menu {
+
+.drop-down-btn {
   display: none;
 }
 .main-nav {
@@ -62,11 +68,14 @@ h3 {
   flex-direction: row;
   font-size: 1em;
   margin: 0;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 .main-nav > li {
   padding: 20px;
 }
 .fixed-up {
+  display: flex;
   position: fixed;
   top: 0;
   width: 100%;
@@ -79,8 +88,8 @@ h3 {
 }
 
 .logo-image {
-  height: 80px;
-  width: auto;
+  width: 250px;
+  height: auto;
 }
 
 /* BOTTOM NAV-BARS */
@@ -111,31 +120,56 @@ h3 {
 .social > li {
   margin: 10px;
 }
-
-/* MOBILE VIEW */
-@media only screen and (max-width: 600px) {
-  .open-menu {
-    display: flex;
-    height: 50px;
-    width: 50px;
-    margin: 20px;
-  }
-  li {
-    display: none;
-  }
-  .fixed-bottom {
-    display: none;
-  }
-}
+/*Typing Effect*/
 @keyframes blink-caret {
   from,
   to {
     border-color: transparent;
   }
   50% {
-    border-color: #666;
+    border-color: #fff;
   }
 }
 .txt-rotate {
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 600px) {
+  .logo-image {
+    width: 150px;
+    height: auto;
+  }
+  .fixed-bottom {
+    display: none;
+  }
+  .drop-down-btn {
+    display: block;
+  }
+  .drop-down-img {
+    display: flex;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+  }
+  .main-nav > li {
+    display: none;
+  }
+
+  .drop-down-btn:hover + .main-nav {
+    background-color: rgb(43, 43, 43);
+    color: gray;
+    list-style: none;
+    display: block;
+    font-size: 0.8em;
+    margin: 0;
+    text-align: left;
+    padding: 5px;
+    padding-right: 35px;
+  }
+  .drop-down-btn:hover + .main-nav > li {
+    color: wheat;
+    display: block;
+    padding: 5px;
+  }
 }
